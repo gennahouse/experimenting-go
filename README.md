@@ -1,2 +1,2 @@
 # experimenting-go
-getting into golang
+This repo was created to keep track of my improvments
