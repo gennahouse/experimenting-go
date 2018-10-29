@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+{{range .}}
+{{if .Name}}
+<h1>This person name is: {{.Name}}</h1>
+{{end}}
+{{end}}
+{{range .}}
+{{if .Age}}
+<h1>I'm {{.Age}} years old.</h1>
+{{end}}
+{{end}}
+{{range .}}
+{{if and .Name .Age}}
+<h1>Hi, I'm {{.Name}} and I'm {{.Age}} years old!</h1>
+{{end}}
+{{end}}
+</body>
+</html>
