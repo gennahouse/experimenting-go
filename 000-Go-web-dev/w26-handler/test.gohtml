@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+{{if .}}
+{{range $key, $value := .}}
+<p>{{$key}}</p> 
+<p>{{range $value}} {{.}} {{end}}</p>
+{{end}}
+{{end}}
+
+<form action="/?fname=test" method="POST">
+<input type="test" name="fname" placeholder="firstname">
+<input type="submit" name="submit-btn" value="submit">
+</form>
+</body>
+</html>
